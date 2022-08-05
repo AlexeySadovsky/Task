@@ -6,16 +6,16 @@
           content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Input</title>
-    <link rel='stylesheet' href='Styles/styles.css'>
+    <link rel='stylesheet' href='Styles/styles.scss'>
 </head>
 <body>
 <div class='wrapper'>
-    <input type='text' id='name' required pattern="@^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$"><label for='name'>Имя</label>
-    <input type='text' id='surname' required pattern="@^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$"><label for='surname'>Фамилия</label>
-    <input type='date' id='date' required><label for='date'>Дата рождения</label>
-    <input type='text' id='sex' required pattern = "^[0-1]{1}$"><label for='sex' >Пол</label>
-    <input type='text' id='city' required pattern="@^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$"><label for='city'>Город рождения</label>
-    <button onclick='getInputData()'>Сохранить</button>
+    <input type='text' id='name' required pattern="@^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$" class='text-field__input'><label for='name' class='text-field__label'>Имя</label>
+    <input type='text' id='surname' required pattern="@^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$" class='text-field__input'><label for='surname' class='text-field__label'>Фамилия</label>
+    <input type='date' id='date' required class='text-field__input'><label for='date' class='text-field__label'>Дата рождения</label>
+    <input type='text' id='sex' required pattern = "^[0-1]{1}$"  class='text-field__input'><label for='sex' class='text-field__label'>Пол</label>
+    <input type='text' id='city' required pattern="@^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$" class='text-field__input'><label for='city' class='text-field__label'>Город рождения</label>
+    <button onclick='getInputData()' class='border-button'>Сохранить</button>
 </div>
     <script src='https://code.jquery.com/jquery-3.1.1.min.js'
             crossOrigin='anonymous'></script>
