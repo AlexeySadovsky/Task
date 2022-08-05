@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Input</title>
+    <link rel='stylesheet' href='Styles/styles.css'>
+</head>
+<body>
+<div class='wrapper'>
+    <input type='text' id='name' required pattern="@^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$"><label for='name'>Имя</label>
+    <input type='text' id='surname' required pattern="@^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$"><label for='surname'>Фамилия</label>
+    <input type='date' id='date' required><label for='date'>Дата рождения</label>
+    <input type='text' id='sex' required pattern = "^[0-1]{1}$"><label for='sex' >Пол</label>
+    <input type='text' id='city' required pattern="@^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$"><label for='city'>Город рождения</label>
+    <button onclick='getInputData()'>Сохранить</button>
+</div>
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js'
+            crossOrigin='anonymous'></script>
+    <script src='View/script.js'></script>
+</body>
+</html>
